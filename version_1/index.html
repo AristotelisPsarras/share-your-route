@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Share your route </title>
+    <link rel="icon" href="./img/logo.png">
+    <!-- <img src="./img/logo.png" alt=""> -->
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <img class="logo">
+            <img src="./img/logo.png"></img>
+            <h1>Share Your Route</h1>
+    </div>
+    <button class="btn btn-large btn-open">Share Your Route</button>
+    </header>
+    <form class="route-form hidden">
+        <input type="text" name="" id="" placeholder="Share your route">
+        <span>200</span>
+        <input type="text" name="" id="" placeholder="Google Maps">
+        <select name="" id="">
+            <option value="">Choose a category</option>
+            <option value="On road">on-bellow-400km</option>
+            <option value="Off Road">on-above-400km</option>
+            <option value="Enduro">enduro-easy</option>
+        </select>
+        <button class="btn btn-large">Post </button>
+    </form>
+    <main class="main">
+        <aside>
+            <ul>
+                <li class="category"><button class="btn btn-all-categories">All</button></li>
+                <li class="category"> <button class="btn btn-category"
+                        style="background-color: #3b82f6;">on-bellow-400km </button>
+                </li>
+                <li class="category"> <button class="btn btn-category"
+                        style="background-color: #16a34a;">on-above-400km</button>
+                </li>
+                <li class="category"> <button class="btn btn-category" style="background-color: #ef4444;">enduro-easy
+                    </button> </li>
+            </ul>
+        </aside>
+        <section>
+            <ul class="route-list">
+                <li class="route">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque rerum est
+                        repellendus voluptatum
+                        dolores nesciunt mollitia magni magnam fugit nemo itaque reprehenderit, sed tempora at
+                        cumque
+                        esse. Id, quibusdam voluptatem.
+                        <a class="map" href="https://www.google.com/maps" target="_blank">Route</a>
+                    </p>
+                    <span style="background-color: #3b82f6;" class="tag">on-bellow-400km</span>
+                    <div class="vote-buttons">
+                        <button>👍 56 </button>
+                        <button>🤯 52 </button>
+                        <button>⛔️ 5 </button>
+                    </div>
+                </li>
+                <li class="route">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur tempore
+                        repudiandae nisi
+                        praesentium? Eum ea optio quo distinctio eos unde placeat repellat autem. Assumenda esse,
+                        nam
+                        distinctio cum soluta sapiente!rn to Athens the link below is the ancient
+                        gpx
+                        <a class="map" href="https://www.google.com/maps" target="_blank">Route</a>
+                    </p>
+                    <span class="tag" style="background-color: #16a34a;">on-above-400km </span>
+                    <div class="vote-buttons">
+                        <button>👍 56 </button>
+                        <button>🤯 52 </button>
+                        <button>⛔️ 5 </button>
+                    </div>
+                </li>
+                <li class="route">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iusto iste quos
+                        soluta facilis
+                        eaque, corrupti dolorum quia ex quae. Quaerat, mollitia. Modi itaque quis earum accusantium
+                        eligendi voluptate nisi.
+                        <a class="map" href="https://www.google.com/maps" target="_blank">Route</a>
+                    </p>
+                    <span class="tag" style="background-color: #ef4444;">enduro-easy</span>
+                    <div class="vote-buttons">
+                        <button>👍 56 </button>
+                        <button>🤯 52 </button>
+                        <button>⛔️ 5 </button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    </div>
+    <!-- Js files imports -->
+    <!-- <script src="./data.js"></script> -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

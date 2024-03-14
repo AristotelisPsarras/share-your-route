@@ -1,0 +1,308 @@
+/*Colors to be used 
+Orange :#D94C2a
+YELLOW #FDEB6C
+STH LIKE BLACK #262223 BACKGROUND
+WHITE #FFF
+*/
+/*GENERAL*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #292524;
+  padding: 40px 64px 0px;
+  font-family: "Sono", sans-serif;
+  color: #fafaf9;
+  /* font-weight: 600; */
+}
+/*Crate a class in order to hide the form*/
+.hidden {
+  display: none !important;
+}
+.message {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 24px;
+}
+/*header -logo-form*/
+/*I have puted img and h1 on a div named logo in order to have two flex items the div and the button share your route then i made the header the flexbox*/
+/*HEADER*/
+#root {
+  background-color: #fff;
+  max-width: 1500px;
+  margin: 0px auto;
+  height: 80vh;
+}
+
+.header {
+  margin-bottom: 40px;
+  /* background-color: pink;
+  padding: 10px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  justify-content: space-between;
+  height: calc(100vh - 48px - 68px - 40px);
+}
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
+.logo {
+  /* background-color: green; */
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+}
+.logo img {
+  width: 68px;
+  height: 68px;
+}
+h1 {
+  font-size: 42px;
+  text-transform: uppercase;
+  /* text-align: center; */
+  /* an den doylepsei to coiny */
+  font-family: "Coiny", sans-serif;
+  /* color: #d94c2a; */
+  line-height: 1;
+  margin-top: 6px;
+}
+.route {
+  font-size: 20px;
+  line-height: 1.4;
+  background-color: #44403c;
+  margin-bottom: 16px;
+  padding: 16px 24px;
+  letter-spacing: -1px;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/*Opens a forp to inserth tha new fact when i press the button share your route */
+.route-form {
+  background-color: #262223;
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 16px;
+}
+
+.route-form input,
+.route-form select {
+  width: 220px;
+  background-color: #57534e;
+  color: inherit;
+  border: none;
+  border-radius: 100px;
+  padding: 16px;
+  font-size: 18px;
+  font-family: inherit;
+}
+/* .route-form input::hover,
+.route-form select::hover {
+  color: #57534e;
+} */
+.route-form span {
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 18px;
+}
+.route-form input:first-child {
+  flex-grow: 1;
+}
+@media (max-width: 1000px) {
+  body {
+    padding: 32px 48px;
+  }
+  .route-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .route-form input,
+  .route-form select {
+    width: auto;
+  }
+  .route-form span {
+    text-align: center;
+  }
+}
+section {
+  overflow: scroll;
+  padding-bottom: 40px;
+}
+
+/*MAIN*/
+/*SECTION*/
+.main {
+  max-width: 1500px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 48px;
+}
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+ul {
+  list-style: none;
+}
+/*Facts the right part of the page   */
+.route {
+  font-size: 20px;
+  line-height: 1.4;
+  font-family: "Sono", sans-serif;
+  color: #fff;
+  background-color: #262223;
+  margin-bottom: 16px;
+  /*first value from the top and bottom and second for the right and left */
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: space-between;
+  letter-spacing: -1;
+  border-radius: 16px;
+}
+@media (max-width: 1200px) {
+  .route {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-end;
+  }
+}
+.tag {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Coiny", sans-serif;
+  color: #fff;
+  padding-top: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 100px;
+}
+.vote-buttons {
+  /*In order to make them stick to the write */
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.vote-buttons button {
+  border: none;
+  background-color: #57534e;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 100px;
+  color: inherit;
+  font-family: inherite;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.vote-buttons button:hover {
+  background-color: #000;
+}
+/*links*/
+.map {
+  color: darkgray;
+  text-decoration: none;
+  margin-left: 12px;
+  transition: 0.3s;
+}
+.map:hover {
+  color: #d94c2a;
+}
+/*Buttons*/
+.btn {
+  border: none;
+  font-family: "Coiny", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 16px 0 13px;
+  background-image: linear-gradient(135deg, #3b82f6, #ef4444, #16a34a, #eab308);
+  background-color: #000;
+  color: inherit;
+  border-radius: 100px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(110%) rotate(-2deg);
+}
+.btn-large {
+  font-size: 20px;
+  padding: 20px 32px 17px;
+}
+.btn-all-categories {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.btn-category {
+  width: 100%;
+  background-image: none;
+  color: inherit;
+}
+.category {
+  margin-bottom: 16px;
+}
+@media (max-width: 1000px) {
+  body {
+    padding: 32px 48px;
+  }
+
+  .route-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .route-form input,
+  .route-form select {
+    width: auto;
+  }
+}
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #root {
+    padding: 24px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .route-form {
+    padding: 16px;
+  }
+
+  .route {
+    padding: 12px 16px;
+  }
+}
